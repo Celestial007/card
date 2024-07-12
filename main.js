@@ -1,13 +1,14 @@
 let music = document.getElementById('music');
 let vol = document.getElementById('vol');
 let video = document.getElementById('video');
+let body = document.body;
 video.loop = true;
 video.autoplay = true;
 music.autoplay = true;
 video.src = "bg.mp4";
 music.src = "1.mp3";
 
-ReportBody.onclick = function() {
+body.onclick = function() {
     video.play()
     music.play();
 }
