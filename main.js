@@ -8,7 +8,7 @@ music.src = "1.mp3";
 
 let isPlaying = true;
 vol.innerHTML = `<i class="fa-solid fa-volume-xmark"></i>`
-
+video.loop = true;
 vol.onclick = function() {
     if(isPlaying == true){
         music.play()
