@@ -7,6 +7,7 @@ video.src = "bg.mp4";
 music.src = "1.mp3";
 
 let isPlaying = true;
+vol.innerHTML = `<i class="fa-solid fa-volume-xmark"></i>`
 
 vol.onclick = function() {
     if(isPlaying == true){
