@@ -1,11 +1,13 @@
 let music = document.getElementById('music');
 let vol = document.getElementById('vol');
 let video = document.getElementById('video');
-video.autoplay = true;
 video.loop = true;
 video.src = "bg.mp4";
-music.autoplay = true;
 music.src = "1.mp3";
+window.addEventListener("load", (event) => {
+    video.play()
+    music.play()
+  });
 
 let isPlaying = true;
 
