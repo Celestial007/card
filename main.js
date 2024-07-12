@@ -2,12 +2,15 @@ let music = document.getElementById('music');
 let vol = document.getElementById('vol');
 let video = document.getElementById('video');
 video.loop = true;
+video.autoplay = true;
+music.autoplay = true;
 video.src = "bg.mp4";
 music.src = "1.mp3";
-window.addEventListener("load", (event) => {
+
+ReportBody.onclick = function() {
     video.play()
-    music.play()
-  });
+    music.play();
+}
 
 let isPlaying = true;
 
