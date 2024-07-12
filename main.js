@@ -6,9 +6,9 @@ let body = document.body;
 video.src = "bg.mp4";
 music.src = "1.mp3";
 
-let isPlaying = true;
 vol.innerHTML = `<i class="fa-solid fa-volume-xmark"></i>`
-video.loop = true;
+
+let isPlaying = true;
 vol.onclick = function() {
     if(isPlaying == true){
         music.play()
@@ -22,3 +22,7 @@ vol.onclick = function() {
         isPlaying = true;
     }
 }
+video.addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+        video.play()
+    }
